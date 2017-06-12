@@ -1,3 +1,49 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+h1 {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 3.5em;
+  padding-left: 30px;
+}
+
+h2 {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.5em;
+  padding-left: 30px;
+}
+
+h3 {
+  color: grey;
+  font-size: 1em;
+  padding-left: 30px;
+}
+
+nav ul {
+  margin : 0;
+  padding: 30px;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
+  color: red;
+}
+
+img {
+  padding: 15px 30px;
+}
+
+footer li {
+  display: inline-block;
+  color: black;
+}
+
+#copyright {
+  float: right;
+  padding-top: 60px;
+}
+
