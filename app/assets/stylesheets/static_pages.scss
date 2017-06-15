@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body { 
+  padding-bottom: 70px; 
+}
+
+footer {
+  height: 90px;
+}
 
 h1 {
   font-family: 'Helvetica', sans-serif;
@@ -29,6 +36,10 @@ nav ul {
   margin : 0;
   padding: 30px;
   list-style: none;
+}
+
+footer ul {
+  padding: 0px;
 }
 
 li {
