@@ -1,3 +1,3 @@
 class Product < ApplicationRecord
-  product = Product.create 
+  has_many :orders
 end
