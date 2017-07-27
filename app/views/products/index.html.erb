@@ -5,14 +5,7 @@
 <div class="container-fluid" id="pdt-menu">
   <div class="row">
     <% @products.each do |product| %>
-      <div class="col-sm-2 col-md-4">
-        <strong><%= product.name %></strong><br>
-        <%= product.description %><br>
-        <strong>$ <%= product.price %></strong><br>
-        <%= link_to 'Show', product %>
-        <%= link_to 'Edit', edit_product_path(product) %>
-        <%= link_to 'Destroy', product, method: :destroy, data: { confirm: 'Are you sure?' } %>
-      </div><!--/col-->
+      <%= render @products %>
     <% end %>
   </div><!--/row--> 
 </div><!--/container-->
