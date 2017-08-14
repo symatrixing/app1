@@ -1,5 +1,4 @@
-<h2> Featured Product: Pancakes </h2>
-<%= @featured_product %>
+<h2> Pancakes </h2>
 
 <div class = "carousel slide" id="carousel-example-generic" data-ride ="carousel">
   <!-- Indicators -- > 
@@ -12,13 +11,9 @@
   <!-- Wrapper for slides -->
   <div class = "carousel-inner" role = "listbox">
     <% @products.each do |product| %>
-      <div class = "item<%= "active" if product == @products.first %>">
+      <div class = "item active">
         <%= image_tag(product.image_url) %>
-          <div class = "carousel-caption">
-            <%= product.name%>
-          </div>
       </div> <!--/item-->
-      
     <% end %>
   </div><!--/carousel-inner--> 
 
