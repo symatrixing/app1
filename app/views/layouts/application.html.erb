@@ -39,6 +39,14 @@
             <li><%= link_to 'Menu', static_pages_menu_path %></li>
             <li><%= link_to 'Products', products_path %></li>
           </ul>
+          <form class="navbar-form navbar-left search-bar">
+            <div class="form-group">
+                <%= form_with(url: products_path, method: 'get') do |form|%>
+                  <%= form.text_field :q, id: 'q', value: params[:q], class: 'form-control', placeholder: 'search products' %>
+                <%= form.submit 'Search' %>
+              <% end %>
+            </div><!--/form grp-->
+          </form>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
